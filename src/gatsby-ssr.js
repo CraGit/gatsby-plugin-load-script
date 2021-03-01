@@ -30,7 +30,7 @@ export const onRenderBody = ({setPostBodyComponents}, pluginOptions) => {
   }
   if (!('async' in finalOptions) && !('defer' in finalOptions)) {
     // Async should be true by default
-    finalOptions['async'] = true
+    finalOptions['async'] = false
   }
   const optionArray = []
   Object.entries(finalOptions).forEach(([property, value]) => {
